@@ -1,0 +1,2 @@
+<h1>About</h1>
+<p1>PhD Student studying motor control and decision-making during human-human interaction. I'm interested in computer science, computational modeling, human motor behaviour, sports, and music.</p1>
