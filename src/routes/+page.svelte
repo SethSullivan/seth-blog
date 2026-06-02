@@ -54,19 +54,64 @@
 	</div>
 </section>
 
+<section class="papers">
+	<div class="section-header">
+		<h2>Papers</h2>
+		<p>Selected publications and works in progress.</p>
+	</div>
+	<div class="paper-grid">
+		<article class="card paper-card surface-2">
+			<h3>Indecisions under a time deadline.</h3>
+			<p>We found that people were suboptimal and excessively indecisive. Find out why...</p>
+			<span class="tag">Decision-making</span>
+		</article>
+		<article class="card paper-card surface-2">
+			<h3>Motor reflexes use predictions of a partner's future actions</h3>
+			<p>.</p>
+			<span class="tag">Joint Action</span>
+			<span class="tag">Dynamic Game Theory</span>
+			<span class="tag">Motor Control</span>
+		</article>
+		<article class="card paper-card surface-2">
+			<h3>Motor reflexes are differentially tuned to collaboration and competition</h3>
+			<p>.</p>
+			<span class="tag">Joint Action</span>
+			<span class="tag">Dynamic Game Theory</span>
+			<span class="tag">Motor Control</span>
+		</article>
+	</div>
+</section>
+
 <section class="grid">
-	<article class="card about-card surface-3">
-		<h2>About</h2>
-		<p>
-			I build data-driven tools for scientists and teams. My work blends neuroscience, interaction
-			design, and practical software that turns experiments into insight.
-		</p>
-		<div class="meta">
-			<span>Decision-making</span>
-			<span>Human movement</span>
-			<span>Computational modeling</span>
-		</div>
-	</article>
+	<!-- 	<article class="card about-card surface-3"> -->
+	<!-- 		<h2>About</h2> -->
+	<!-- 		<p> -->
+	<!-- 			I build data-driven tools for scientists and teams. My work blends neuroscience, interaction -->
+	<!-- 			design, and practical software that turns experiments into insight. -->
+	<!-- 		</p> -->
+	<!-- 		<div class="timeline"> -->
+	<!-- 			<div class="timeline-item"> -->
+	<!-- 				<span class="time">Now</span> -->
+	<!-- 				<h3>Risk modeling</h3> -->
+	<!-- 				<p>Applied analytics for forecasting, planning, and decision support.</p> -->
+	<!-- 			</div> -->
+	<!-- 			<div class="timeline-item"> -->
+	<!-- 				<span class="time">2021-2026</span> -->
+	<!-- 				<h3>Grad school</h3> -->
+	<!-- 				<p>Motor control, decision-making, and human-human interaction research.</p> -->
+	<!-- 			</div> -->
+	<!-- 			<div class="timeline-item"> -->
+	<!-- 				<span class="time">2017-2021</span> -->
+	<!-- 				<h3>Undergrad</h3> -->
+	<!-- 				<p>Built the technical base across computation, behavior, and design.</p> -->
+	<!-- 			</div> -->
+	<!-- 		</div> -->
+	<!-- 		<div class="meta"> -->
+	<!-- 			<span>Decision-making</span> -->
+	<!-- 			<span>Human movement</span> -->
+	<!-- 			<span>Computational modeling</span> -->
+	<!-- 		</div> -->
+	<!-- 	</article> -->
 
 	<article class="card blog-card surface-2">
 		<h2>Latest writing</h2>
@@ -158,6 +203,63 @@
 		color: var(--text-2);
 	}
 
+	.timeline {
+		margin-top: var(--size-5);
+		display: grid;
+		gap: var(--size-5);
+		position: relative;
+		padding-left: var(--size-6);
+	}
+
+	.timeline::before {
+		content: '';
+		position: absolute;
+		left: 12px;
+		top: 6px;
+		bottom: 6px;
+		width: 2px;
+		background: linear-gradient(180deg, var(--brand), transparent 85%);
+		opacity: 0.7;
+	}
+
+	.timeline-item {
+		position: relative;
+		padding-left: var(--size-4);
+	}
+
+	.timeline-item::before {
+		content: '';
+		position: absolute;
+		left: -1px;
+		top: 2px;
+		width: 10px;
+		height: 10px;
+		border-radius: var(--radius-round);
+		background: var(--brand);
+		box-shadow: 0 0 0 6px color-mix(in srgb, var(--brand) 20%, transparent);
+	}
+
+	.timeline-item h3 {
+		margin: 0;
+		font-size: var(--font-size-2);
+	}
+
+	.timeline-item p {
+		margin-top: var(--size-2);
+		color: var(--text-2);
+	}
+
+	.time {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--size-2);
+		font-family: var(--font-mono);
+		font-size: var(--font-size-0);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-2);
+	}
+
 	.blog-card .text-link {
 		display: inline-flex;
 		margin-top: var(--size-4);
@@ -172,12 +274,24 @@
 		gap: var(--size-6);
 	}
 
+	.papers {
+		margin-top: var(--size-9);
+		display: grid;
+		gap: var(--size-6);
+	}
+
 	.section-header p {
 		max-inline-size: 48ch;
 		color: var(--text-2);
 	}
 
 	.project-grid {
+		display: grid;
+		gap: var(--size-6);
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+
+	.paper-grid {
 		display: grid;
 		gap: var(--size-6);
 		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -197,6 +311,22 @@
 		height: 160px;
 		/*background: radial-gradient(circle, rgba(255, 163, 71, 0.3), transparent 70%);*/
 		opacity: 0.7;
+	}
+
+	.paper-card {
+		border-style: dashed;
+		border-color: color-mix(in srgb, var(--border) 50%, transparent);
+		background: color-mix(in srgb, var(--surface-2) 85%, transparent);
+	}
+
+	.paper-card h3 {
+		font-size: var(--font-size-2);
+	}
+
+	.paper-card .tag {
+		background: transparent;
+		border: 1px solid var(--border);
+		color: var(--text-1);
 	}
 
 	.tag {
