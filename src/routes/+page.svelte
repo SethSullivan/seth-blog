@@ -22,32 +22,35 @@
 <section class="projects">
 	<div class="section-header">
 		<h2>Projects</h2>
-		<p>Selected tools and experiments I have been building recently.</p>
+		<p>Apps and tools I have been building recently.</p>
 	</div>
 	<div class="project-grid">
-		<article class="card project-card surface-3">
-			<h3>KNCT</h3>
-			<p>
-				Social media application that let's you connect with your friends without suggested posts
-				and AI generated content.
-			</p>
-			<span class="tag">Mobile App Development</span>
-		</article>
+		<a href="https://knctfriends.com">
+			<article class="card project-card surface-3">
+				<h3>KNCT</h3>
+				<p>
+					Social media application that let's you connect with your friends without suggested posts
+					and AI generated content.
+				</p>
+				<span class="tag">Mobile App Development</span>
+			</article>
+		</a>
 
-		<article class="card project-card surface-3">
-			<h3>Finance Dashboard</h3>
-			<p>Need to plan out your expenses? Give it a try!</p>
-			<span class="tag">Dashboard Tool</span>
-		</article>
+		<a href="https://finance-dashboard.sethsully.com">
+			<article class="card project-card surface-3">
+				<h3>Finance Dashboard</h3>
+				<p>Need to plan out your expenses? Give it a try!</p>
+				<span class="tag">Dashboard Tool</span>
+			</article>
+		</a>
 
-		<article class="card project-card surface-3">
-			<h3>Participant Scheduler</h3>
-			<p>
-				Scheduling system for lab studies that automates availability, reminders, and recruitment
-				pipelines.
-			</p>
-			<span class="tag">Research ops</span>
-		</article>
+		<a href="https://participantscheduler.com">
+			<article class="card project-card surface-3">
+				<h3>Participant Scheduler</h3>
+				<p>An when2meet style web application for scheduling research participants.</p>
+				<span class="tag">Research ops</span>
+			</article>
+		</a>
 	</div>
 </section>
 
@@ -130,6 +133,7 @@
 		display: grid;
 		gap: var(--size-6);
 		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		padding-top: var(--size-9);
 	}
 
 	.card {
@@ -191,7 +195,7 @@
 		right: -20%;
 		width: 160px;
 		height: 160px;
-		background: radial-gradient(circle, rgba(255, 163, 71, 0.3), transparent 70%);
+		/*background: radial-gradient(circle, rgba(255, 163, 71, 0.3), transparent 70%);*/
 		opacity: 0.7;
 	}
 
