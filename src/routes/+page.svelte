@@ -7,7 +7,6 @@
 </svelte:head>
 
 <section class="hero">
-	<p class="eyebrow">Researcher • Builder • Writer</p>
 	<h1>Seth Sullivan</h1>
 	<p class="lead">
 		PhD student studying motor control and decision-making. I write about computational modeling,
@@ -16,6 +15,39 @@
 	<div class="hero-actions">
 		<a class="primary" href="/blog">Read the blog</a>
 		<a class="ghost" href="/about">About me</a>
+	</div>
+	<p class="eyebrow">Researcher • Builder • Writer</p>
+</section>
+
+<section class="projects">
+	<div class="section-header">
+		<h2>Projects</h2>
+		<p>Selected tools and experiments I have been building recently.</p>
+	</div>
+	<div class="project-grid">
+		<article class="card project-card surface-3">
+			<h3>KNCT</h3>
+			<p>
+				Social media application that let's you connect with your friends without suggested posts
+				and AI generated content.
+			</p>
+			<span class="tag">Mobile App Development</span>
+		</article>
+
+		<article class="card project-card surface-3">
+			<h3>Finance Dashboard</h3>
+			<p>Need to plan out your expenses? Give it a try!</p>
+			<span class="tag">Dashboard Tool</span>
+		</article>
+
+		<article class="card project-card surface-3">
+			<h3>Participant Scheduler</h3>
+			<p>
+				Scheduling system for lab studies that automates availability, reminders, and recruitment
+				pipelines.
+			</p>
+			<span class="tag">Research ops</span>
+		</article>
 	</div>
 </section>
 
@@ -43,47 +75,7 @@
 	</article>
 </section>
 
-<section class="projects">
-	<div class="section-header">
-		<h2>Projects</h2>
-		<p>Selected tools and experiments I have been building recently.</p>
-	</div>
-	<div class="project-grid">
-		<article class="card project-card surface-3">
-			<h3>Participant Scheduler</h3>
-			<p>
-				Scheduling system for lab studies that automates availability, reminders, and recruitment
-				pipelines.
-			</p>
-			<span class="tag">Research ops</span>
-		</article>
-		<article class="card project-card surface-3">
-			<h3>Finance Dashboard</h3>
-			<p>
-				Personal analytics for budgets, grant tracking, and forecasting expenses across projects.
-			</p>
-			<span class="tag">Data visualization</span>
-		</article>
-		<article class="card project-card surface-3">
-			<h3>KNCT</h3>
-			<p>A toolkit exploring kinematic coordination and teamwork metrics in joint tasks.</p>
-			<span class="tag">Motor control</span>
-		</article>
-	</div>
-</section>
-
 <style>
-	:global(body) {
-		background-image:
-			radial-gradient(circle at top right, rgba(255, 163, 71, 0.2), transparent 55%),
-			linear-gradient(
-				180deg,
-				rgba(20, 22, 26, 0.7) 0%,
-				rgba(20, 22, 26, 0.2) 45%,
-				rgba(20, 22, 26, 0) 100%
-			);
-	}
-
 	.hero {
 		display: grid;
 		gap: var(--size-4);
