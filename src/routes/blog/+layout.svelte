@@ -1,11 +1,8 @@
 <script lang="ts">
-	import Header from './header.svelte';
-	import Footer from './footer.svelte';
-	import Transition from './transition.svelte';
+	import Header from '../header.svelte';
+	import Footer from '../footer.svelte';
+	import Transition from '../transition.svelte';
 
-	import 'open-props/style';
-	import 'open-props/normalize';
-	import 'open-props/buttons';
 	import '../app.css';
 
 	export let data;
